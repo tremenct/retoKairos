@@ -1,0 +1,9 @@
+- hosts: localhost
+  tasks:
+  - name: S3 Bucket with index.html
+    amazon.aws.aws_s3:
+      bucket: mapfre-gitops-fbohorq
+      object: index.html
+      src: index.html
+      permission: public-read
+      mode: put
