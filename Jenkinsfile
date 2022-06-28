@@ -29,8 +29,7 @@ pipeline {
             steps {
                 sh 'terraform apply --auto-approve'
             }
-        }∫
-
+        }
         stage ('Ansible otras ramas') {
             when {
                 not {
